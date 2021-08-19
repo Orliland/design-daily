@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <main class="main">
+        <nav class="menu">
+          <ul>
+            <li><a id="btnSignin" href="#" class="menu-link">Sign In</a></li>
+            <li>
+              <a id="btnSignup" href="#" class="menu-link noselected"
+                >Sign Up</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <section id="signin" class="form signin">
+          <form action="">
+            <label class="label" for="user">
+              <i class="input-icon far fa-user"></i>
+              <input
+                id="user"
+                class="input"
+                type="text"
+                name="user"
+                placeholder="Username"
+                required
+              />
+            </label>
+            <label class="label" for="password">
+              <i class="input-icon fas fa-lock"></i>
+              <input
+                id="password"
+                class="input"
+                type="password"
+                name="password"
+                placeholder="Password"
+                required
+              />
+            </label>
+            <div class="checks">
+              <label for="remember">
+                <input
+                  id="remember"
+                  type="checkbox"
+                  name="remember"
+                  class="checkbox"
+                />
+                <span class="label-text">Remember me</span>
+              </label>
+              <a class="forgot" href="#">Forgot password</a>
+            </div>
+            <button class="button">LOG IN</button>
+            <span class="separate"
+              ><i class="fas fa-minus"></i> <span>or</span>
+              <i class="fas fa-minus"></i
+            ></span>
+
+            <button class="button btn-fb">
+              <i class="fb-icon fab fa-facebook-f"></i> Log In with Facebook
+            </button>
+          </form>
+        </section>
+        <section id="signup" class="form signup">
+          <form action="">
+            <label class="label" for="user">
+              <i class="input-icon far fa-user"></i>
+              <input
+                id="user"
+                class="input"
+                type="text"
+                name="user"
+                placeholder="Username"
+                required
+              />
+            </label>
+            <label class="label" for="email">
+              <i class="input-icon far fa-envelope"></i>
+              <input
+                id="email"
+                class="input"
+                type="email"
+                name="email"
+                placeholder="Email"
+                required
+              />
+            </label>
+            <label class="label" for="password">
+              <i class="input-icon fas fa-lock"></i>
+              <input
+                id="password"
+                class="input"
+                type="password"
+                name="password"
+                placeholder="Password"
+                required
+              />
+            </label>
+            <div class="checks genders">
+              <label for="gendeer">
+                <input
+                  id="gender"
+                  type="checkbox"
+                  name="gender"
+                  class="checkbox"
+                />
+                <span class="label-text">Male</span>
+              </label>
+              <label for="gender">
+                <input
+                  id="gender"
+                  type="checkbox"
+                  name="gender"
+                  class="checkbox"
+                />
+                <span class="label-text">Female</span>
+              </label>
+            </div>
+            <button class="button">Sign Up</button>
+            <span class="separate"
+              ><i class="fas fa-minus"></i> <span>or</span>
+              <i class="fas fa-minus"></i
+            ></span>
+
+            <button class="button btn-fb">
+              <i class="fb-icon fab fa-facebook-f"></i> Sign Up with Facebook
+            </button>
+          </form>
+        </section>
+      </main>
+    </div>
+    <script src="./js/index.js"></script>
+  </body>
+</html>

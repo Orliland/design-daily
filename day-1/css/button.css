@@ -1,0 +1,36 @@
+.button {
+  width: 100%;
+  padding: 20px 0;
+  background-color: var(--color3);
+  border: none;
+  font: var(--body5);
+  color: var(--color5);
+  cursor: pointer;
+}
+
+.button:hover {
+  opacity: 0.8;
+}
+
+.btn-fb {
+  background-color: var(--color4);
+  font: var(--body6);
+}
+
+.fb-icon {
+  display: inline-block;
+  margin-inline-end: 16px;
+}
+
+.separate {
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  color: var(--color5);
+}
+
+.separate i {
+  font-size: 16px;
+}

@@ -1,0 +1,84 @@
+@import "./input.css";
+@import "./button.css";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --fontBase: "Open Sans", sans-serif;
+  --body1: 600 22px var(--fontBase);
+  --body2: 300 20px var(--fontBase);
+  --body3: 300 15px var(--fontBase);
+  --body4: 400 15px var(--fontBase);
+  --body5: 800 23px var(--fontBase);
+  --body6: 400 20px var(--fontBase);
+
+  --bgColor: #42688b;
+  --primary: #2b3237;
+  --color3: #fca842;
+  --color4: #2e78be;
+  --color5: #ffffff;
+  --color6: #4ad9d9;
+}
+
+.wrapper {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 20px;
+  background-color: var(--bgColor);
+}
+
+.main {
+  width: 100%;
+  max-width: 500px;
+  min-height: 705px;
+  height: auto;
+  background-color: var(--primary);
+}
+
+.menu ul {
+  display: flex;
+  list-style: none;
+}
+
+.menu ul li {
+  inline-size: 50%;
+  text-align: center;
+}
+
+.menu-link {
+  display: inline-block;
+  width: 100%;
+  cursor: pointer;
+  padding: 20px 0;
+  color: var(--color5);
+  font: var(--body1);
+  text-decoration: none;
+}
+
+.noselected {
+  background-color: var(--color5);
+  color: var(--color6);
+}
+
+.noselected:hover {
+  opacity: 0.9;
+}
+
+.form form {
+  width: 100%;
+  padding: 75px 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.signup {
+  display: none;
+}
