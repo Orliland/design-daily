@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --fontBase: "IBM Plex Sans", sans-serif;
+  --font2: "Merriweather", serif;
+  --card__tile: 700 18px/28px var(--font2);
+  --item-font: 700 18px/28px var(--fontBase);
+  --caption: 500 14px/18px var(--fontBase);
+  --link: 500 16px/28px var(--fontBase);
+  --primaryColor: #e4e6e7;
+  --colorFont: #151a41;
+  --colorFont2: #000000;
+}
+
+html,
+body {
+  height: 100vh;
+}
+
+body {
+  display: grid;
+  place-content: center;
+  height: 100vh;
+  background-color: var(--primaryColor);
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-width: 460px;
+  padding: 60px;
+  background-color: #ffffff;
+  box-shadow: 0px 34px 45px -15px rgba(21, 26, 65, 0.25);
+  border-radius: 20px;
+}
+
+.card__title {
+  font: var(--card__tile);
+  color: var(--colorFont);
+}
+
+.card__quali {
+  display: flex;
+  align-content: stretch;
+  gap: 6px;
+  list-style: none;
+}
+
+.card__item {
+  flex: 1;
+  padding: 13px 0;
+  text-align: center;
+  font: var(--item-font);
+  color: var(--colorFont2);
+  border: 1px solid var(--primaryColor);
+  border-radius: 5px;
+}
+
+.card__item--active {
+  background-color: var(--colorFont2);
+  color: #ffffff;
+  border: none;
+  box-shadow: 0px 11px 15px -10px rgba(21, 26, 65, 0.8);
+}
+
+.card__item:hover {
+  box-shadow: 0px 11px 15px -10px rgba(21, 26, 65, 0.4);
+  cursor: pointer;
+}
+
+.card__captions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 12px;
+}
+
+.card__subtext {
+  font: var(--caption);
+  color: var(--colorFont2);
+}
+
+.card__label {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+
+.card__checkbox {
+  width: 28px;
+  height: 28px;
+  border: 1px solid #989ece;
+  border-radius: 5px;
+}
+
+.card__checktext {
+  font: var(--link);
+  color: var(--colorFont2);
+}
+
+.card__separator {
+  border: 1px solid var(--primaryColor);
+}
+
+.link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid var(--primaryColor);
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.link__text {
+  text-transform: uppercase;
+  font: var(--link);
+  color: var(--colorFont);
+}
+
+.link__icon {
+  width: 28px;
+  height: 28px;
+  margin-left: 5px;
+}
